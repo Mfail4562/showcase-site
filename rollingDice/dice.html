@@ -10,6 +10,25 @@
     <script type="texte/javascript" src="dice.js"> </script>
 </head>
 <body>
-    
+    <h1>select the  number of dice's face</h1>
+
+    <div id="selectDice"> <!--selection du dé-->
+        <input type="radio" id="fourFaces" name="diceFaces" value="four">
+        <label for="fourFaces">Dé Quatre</label>
+
+        <input type="radio" id="sixFaces" name="diceFaces" value="six">
+        <label for="sixFaces">Dé six</label>
+
+        <input type="radio" id="twentyFaces" name="diceFaces" value="twenty">
+        <label for="fourFaces">Dé Vingt</label>
+    </div>
+
+    <div id="rollDiceButton"> <!--validation du jet-->
+        <button type="submit" id="roll">Roll the dice</button>
+    </div>
+
+    <div id="dicesResult"> <!--resultat du lancer-->
+        <!--TODO-->
+    </div>
 </body>
 </html>
