@@ -1,5 +1,7 @@
 body{
  background-color:#415A77;
+ color: #E0E1DD;
+ text-align: center;
 }
 
 ::-webkit-scrollbar{
@@ -13,4 +15,8 @@ body{
 ::-webkit-scrollbar-thumb{
     background:#1B263B;
     border-radius: 10px;
+}
+
+li{
+    list-style: none;
 }
