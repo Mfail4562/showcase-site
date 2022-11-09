@@ -7,28 +7,30 @@
     <title>Random Generator</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="diceStyles.css">
-    <script type="texte/javascript" src="dice.js"> </script>
-</head>
+   </head>
 <body>
     <h1>select the  number of dice's face</h1>
 
     <div id="selectDice"> <!--selection du dé-->
-        <input type="radio" id="fourFaces" name="diceFaces" value="four">
+        <input type="radio" id="fourFaces" name="diceFaces" value=3>
         <label for="fourFaces">Dé Quatre</label>
 
-        <input type="radio" id="sixFaces" name="diceFaces" value="six">
+        <input type="radio" id="sixFaces" name="diceFaces" value=5 checked>
         <label for="sixFaces">Dé six</label>
 
-        <input type="radio" id="twentyFaces" name="diceFaces" value="twenty">
+        <input type="radio" id="twentyFaces" name="diceFaces" value=19>
         <label for="twentyFaces">Dé Vingt</label>
     </div>
 
-    <div id="rollDiceButton"> <!--validation du jet-->
-        <button type="submit" id="roll">Roll the dice</button>
-    </div>
+    <article>
+        <div id="rollDiceButton"> <!--validation du jet-->
+            <button type="submit" id="roll">Roll the dice</button>
+        </div>
+    
+        <p id="dicesResult"> <!--resultat du lancer-->
+            <!--TODO--></p>
+    </article>
 
-    <div id="dicesResult"> <!--resultat du lancer-->
-        <!--TODO-->
-    </div>
+<script type="text/javascript" src="dice.js"> </script>
 </body>
 </html>
