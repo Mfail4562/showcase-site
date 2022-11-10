@@ -1,0 +1,17 @@
+input {
+ display: none;
+}
+
+img {
+    width: 120px;
+    height: 150px;
+    display: inline;
+    margin-left: 80px;
+}
+
+#selectDice {
+    margin-right: 2.2cm;
+}
+
+
+
