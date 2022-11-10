@@ -20,3 +20,7 @@ body{
 li{
     list-style: none;
 }
+
+.commingSoon {
+    color: #0E1E2F;
+}
