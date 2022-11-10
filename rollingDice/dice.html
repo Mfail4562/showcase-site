@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Generator</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="diceStyles.css">
-   </head>
-<body>
-    <div id="page">
-    <h1 id="title">select the  number of dice's face</h1>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="diceStyles.css" /> -->
+  </head>
+  <body>
+    <div id="page" class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <h1 class="mt-52 text-5xl">select the number of dice's face</h1>
 
-    <div id="selectDice"> 
+      <div
+        id="selectDice"
+        class="grid gap-2 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-20"
+      >
         <!--selection du dé-->
-        <input type="radio"  id="fourFaces" name="dices" value="3">
-            <label for="fourFaces" alt="4 face's dice"><img id="fourFacesimg" src="diceVect/dice4.svg"alt="4 face's dice" onclick="changeImage(this);"/></label>
 
-        <input type="radio" id="sixFaces" name="dices" value="5" >
-            <label for="sixFaces"  ;><img class="dice" id="sixFacesimg"src="diceVect/dice6.svg" alt="6 face's dice"></label>
+        <label for="fourFaces" alt="4 face's dice">
+          <input
+            type="radio"
+            id="fourFaces"
+            name="dices"
+            value="3"
+            class="hidden"
+          />
+          <div id="fourFacesimg" class="dice"></div>
+        </label>
 
-        <input type="radio"  id="twentyFaces" name="dices" value="19">
-            <label for="twentyFaces"><img class="dice" id="twentyFacesimg"src="diceVect/dice20.svg" alt="20 face's dice"></label>
+        <label for="sixFaces" alt="6 face's dice">
+          <input
+            type="radio"
+            id="sixFaces"
+            name="dices"
+            value="5"
+            checked
+            class="hidden"
+          />
+          <div id="sixFacesimg" class="dice"></div>
+        </label>
+
+        <label for="twentyFaces" alt="20 face's dice">
+          <input
+            type="radio"
+            id="twentyFaces"
+            name="dices"
+            value="19"
+            class="hidden"
+          />
+          <div id="twentyFacesimg" class="dice"></div>
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        id="roll"
+        class="bg-[#1B263B] mt-7 text-2xl rounded-full p-3"
+      >
+        Roll the dice
+      </button>
+
+      <div id="dicesResult"><!--resultat du lancer--></div>
     </div>
-   
-    
-        <button type="submit" id="roll">Roll the dice</button>
-        
-    
-        <div id="dicesResult"> <!--resultat du lancer--></div>
-   
-</div>
 
-<script type="text/javascript" src="dice.js"> </script>
-</body>
+    <script type="text/javascript" src="dice.js"></script>
+  </body>
 </html>

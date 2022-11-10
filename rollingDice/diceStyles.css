@@ -1,46 +1,44 @@
-input {
- display: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-img {
+.dice {
     width: 120px;
     height: 150px;
-    display: inline;
+    max-width: 120px;
+    max-height: 150px;
     margin-left: 80px;
     margin-top: 15px;
 }
 
-#selectDice {
-    margin-right: 2.2cm;
+#fourFacesimg {
+    background-image: url('/rollingDice/diceVect/dice4.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#title {
-    margin-top: 200px;
+#fourFaces:checked + #fourFacesimg {
+    background-image: url('/rollingDice/diceVect/dice4checked.svg');
 }
 
-button {
-    margin-top: 30px;
-    font-size: 24px;
-    border-radius: 12px;
-    text-transform: uppercase;
-    color: #E0E1DD;
-    background-color: #1B263B;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 9px #0e1e2f;
-    outline: none;
+
+#sixFacesimg {
+    background-image: url('/rollingDice/diceVect/dice6.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-button:hover{
-    transform: translateY(1px);
-    box-shadow: 0 8px #0e1e2f;
+#sixFaces:checked + #sixFacesimg {
+    background-image: url('/rollingDice/diceVect/dice6checked.svg');
 }
 
-button:active{
-    transform: translateY(7px);
-    box-shadow: 0 2px #0e1e2f;
+
+#twentyFacesimg {
+    background-image: url('/rollingDice/diceVect/dice20.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-#dicesResult{
-    margin-top: 50px;
+#twentyFaces:checked + #twentyFacesimg {
+    background-image: url('/rollingDice/diceVect/dice20checked.svg');
 }
